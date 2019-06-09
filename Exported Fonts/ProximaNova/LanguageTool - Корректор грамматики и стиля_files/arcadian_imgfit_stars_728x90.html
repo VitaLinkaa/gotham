@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!-- saved from url=(0164)https://tpc.googlesyndication.com/pagead/gadgets/gpa_generic_image/arcadian_imgfit_stars_728x90.html#t=4093825230507811230&p=https%3A%2F%2Ftpc.googlesyndication.com -->
+<html class="wf-robotocondensed-n4-active wf-robotocondensed-n7-active wf-robotocondensed-n3-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="dimensions" content="728x90">
+  
+  <link rel="stylesheet" href="./arcadian_imgfit_stars_728x90.css">
+<link rel="stylesheet" href="./css" media="all"><style type="text/css">@charset "UTF-8";
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak],
+.ng-cloak, .x-ng-cloak,
+.ng-hide:not(.ng-hide-animate) {
+  display: none !important;
+}
+
+ng\:form {
+  display: block;
+}
+
+.ng-animate-shim {
+  visibility:hidden;
+}
+
+.ng-anchor {
+  position:absolute;
+}
+</style><style>
+    .layout {
+      border: 1px solid #00a1f1 !important;
+    }
+    .background {
+      background-color: #00a1f1 !important;
+    }
+    .background-alt {
+      background-color: #00a1f1 !important;
+    }
+    .item-panel.onActive {
+      background-color: #e42469 !important;
+      border: 1px solid #e42469 !important;
+    }
+    .cta {
+      background-color: #e42469 !important;
+      color: #ffffff !important;
+    }
+    .cta:hover {
+      background-color: #89163f !important;
+    }
+    .text-holder .name {
+      color: #333333 !important;
+    }
+    .text-holder .description {
+      color: #4d4d4d !important;
+    }
+    .text-holder .price-prefix {
+      color: #0073ed !important;
+    }
+    .text-holder .price {
+      color: #666666 !important;
+    }
+    #header-segment .logo-panel{
+      height:  !important;
+    }
+    .disclaimer-panel{
+      color: #ffffff;
+      display: block !important;
+      height:  !important;
+    }
+    .col-1-2{
+      width:  !important;
+    }
+  </style></head>
+<body ng-controller="layout.controller" ng-init="itemsLimit = 2;" class="ng-scope">
+
+  <!-- Dynamic Styles -->
+  <div dynamic-style="" style="display: none;" class="ng-binding"></div>
+
+  <!-- Layout -->
+  <div id="ad-container" class="layout ad-728x90" field-reference="Product_1_url" ng-mouseenter="autoCycleStop()" ng-class="{&#39;no-logo&#39;: !checkUrl(design.logoImageUrl), &#39;no-disclaimer&#39;:isEmpty(headline.disclaimer)}" style="visibility: visible;">
+
+    <!-- Items Segment -->
+    <section id="items-segment" class="layout-pad background-alt" style="margin-left: 0px; width: 544.5px;">
+      <!-- ngRepeat: product in products | limitTo:itemsLimit --><div class="col-1-2 ng-scope" ng-repeat="product in products | limitTo:itemsLimit">
+        <section class="item-panel built onActive" ng-class="{onActive: isCurrentItemIndex($index)}" set-item="$index" data-interaction="urlchange" data-product-index="0" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.005, 0, 0, 0, 1);">
+
+         <div class="col-1-3">
+            <div ng-class="(isEmpty(product.rating)) ? &#39;row-1-1&#39; : &#39;row-7-8&#39;" class="row-1-1">
+              <!-- Image -->
+              <div class="img-holder" custom-image-fit="" loc="product.imageUrl" scaletype="fit" aligntype="center" style="overflow: hidden;"><img src="./4851772823157057154_8693250270390464616.png" width="81" height="40" style="position: inherit; left: 0px; top: 15px; opacity: 1;"></div>
+            </div>
+            <div class="row-1-8 ng-hide" ng-hide="isEmpty(product.rating)">
+              <!-- Star Ratings -->
+              <ul class="stars-holder ng-hide" ng-show="supportStars &amp;&amp; isRatingValid(product.rating)">
+                <!-- ngRepeat: star in starRatingArray(product.rating) track by $index -->
+                <li ng-show="isShownHalf(product.rating)" class="star half-star ng-hide" style="opacity: 1;">
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="text-holder col-2-3 no-subtitle" ng-class="{&#39;no-price&#39;:isEmpty(product.price) || !toBoolean(headline.showPrice), &#39;no-subtitle&#39;:isEmpty(product.subTitle),
+            &#39;no-name&#39;: isEmpty(product.name), &#39;no-cta&#39;: isEmpty(headline.cta)}">
+            <!-- Details Text -->
+            <div class="name ng-binding" ext-text-fit="" minfontsize="12" multiline="true" truncate="true" title="Контент-менеджер" style="overflow: hidden; font-size: 12px;"><span style="font-size: 12px; overflow: inherit; text-overflow: clip; white-space: inherit;">
+              Контент-менеджер
+            </span></div>
+            <div class="description ng-binding" ext-text-fit="" minfontsize="12" multiline="true" truncate="true" title="" style="overflow: hidden; font-size: 1000px;">
+              
+            </div>
+            <!-- Prices -->
+            <div class="price-holder inline-wrapper" ng-hide="!toBoolean(headline.showPrice)">
+              <div class="price-aligner">
+                <div class="price-prefix ng-binding" ext-text-fit="" minfontsize="12" multiline="true" truncate="true" ng-hide="isEmpty(product.price)" title="" style="overflow: hidden; font-size: 14px;">
+                  
+                </div>
+                <div class="price ng-binding" ext-text-fit="" minfontsize="12" multiline="false" truncate="true" title=" 5 000 грн" style="overflow: hidden; white-space: nowrap; font-size: 14px;"><span style="font-size: 14px; overflow: inherit; text-overflow: clip; white-space: inherit;">
+                  5&nbsp;000&nbsp;грн
+                </span></div>
+              </div>
+            </div>
+            <!-- Cta -->
+            <div class="cta-holder">
+              <div class="cta col-2-3 ng-binding" ext-text-fit="" minfontsize="8" multiline="false" truncate="true" ng-hide="isEmpty(headline.cta)" title="Подробнее" style="overflow: hidden; white-space: nowrap; font-size: 12px;"><span style="font-size: 12px; overflow: inherit; text-overflow: clip; white-space: inherit;">
+                Подробнее
+              </span></div>
+            </div>
+          </div>
+        </section>
+      </div><!-- end ngRepeat: product in products | limitTo:itemsLimit --><div class="col-1-2 ng-scope" ng-repeat="product in products | limitTo:itemsLimit">
+        <section class="item-panel built" ng-class="{onActive: isCurrentItemIndex($index)}" set-item="$index" data-interaction="urlchange" data-product-index="1" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.005, 0, 0, 0, 1);">
+
+         <div class="col-1-3">
+            <div ng-class="(isEmpty(product.rating)) ? &#39;row-1-1&#39; : &#39;row-7-8&#39;" class="row-1-1">
+              <!-- Image -->
+              <div class="img-holder" custom-image-fit="" loc="product.imageUrl" scaletype="fit" aligntype="center" style="overflow: hidden;"><img src="./4007270354995810921_8655003360062715729.png" width="81" height="40" style="position: inherit; left: 0px; top: 15px; opacity: 1;"></div>
+            </div>
+            <div class="row-1-8 ng-hide" ng-hide="isEmpty(product.rating)">
+              <!-- Star Ratings -->
+              <ul class="stars-holder ng-hide" ng-show="supportStars &amp;&amp; isRatingValid(product.rating)">
+                <!-- ngRepeat: star in starRatingArray(product.rating) track by $index -->
+                <li ng-show="isShownHalf(product.rating)" class="star half-star ng-hide" style="opacity: 1;">
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="text-holder col-2-3 no-subtitle" ng-class="{&#39;no-price&#39;:isEmpty(product.price) || !toBoolean(headline.showPrice), &#39;no-subtitle&#39;:isEmpty(product.subTitle),
+            &#39;no-name&#39;: isEmpty(product.name), &#39;no-cta&#39;: isEmpty(headline.cta)}">
+            <!-- Details Text -->
+            <div class="name ng-binding" ext-text-fit="" minfontsize="12" multiline="true" truncate="true" title="Копирайтер, контентщик, администратор социальных сетей" style="overflow: hidden; font-size: 12px;"><span style="font-size: 12px; overflow: inherit; text-overflow: clip; white-space: inherit;">Копирайтер, контентщик,…</span></div>
+            <div class="description ng-binding" ext-text-fit="" minfontsize="12" multiline="true" truncate="true" title="" style="overflow: hidden; font-size: 1000px;">
+              
+            </div>
+            <!-- Prices -->
+            <div class="price-holder inline-wrapper" ng-hide="!toBoolean(headline.showPrice)">
+              <div class="price-aligner">
+                <div class="price-prefix ng-binding" ext-text-fit="" minfontsize="12" multiline="true" truncate="true" ng-hide="isEmpty(product.price)" title="" style="overflow: hidden; font-size: 14px;">
+                  
+                </div>
+                <div class="price ng-binding" ext-text-fit="" minfontsize="12" multiline="false" truncate="true" title=" 8 000 грн" style="overflow: hidden; white-space: nowrap; font-size: 14px;"><span style="font-size: 14px; overflow: inherit; text-overflow: clip; white-space: inherit;">
+                  8&nbsp;000&nbsp;грн
+                </span></div>
+              </div>
+            </div>
+            <!-- Cta -->
+            <div class="cta-holder">
+              <div class="cta col-2-3 ng-binding" ext-text-fit="" minfontsize="8" multiline="false" truncate="true" ng-hide="isEmpty(headline.cta)" title="Подробнее" style="overflow: hidden; white-space: nowrap; font-size: 12px;"><span style="font-size: 12px; overflow: inherit; text-overflow: clip; white-space: inherit;">
+                Подробнее
+              </span></div>
+            </div>
+          </div>
+        </section>
+      </div><!-- end ngRepeat: product in products | limitTo:itemsLimit -->
+    </section>
+
+    <!-- Header Segment -->
+    <section id="header-segment" class="background">
+      <section class="logo-panel">
+        <div class="logo-holder" style="padding: 2px;">
+          <div class="logo" custom-logo-fit="" loc="design.logoImageUrl" scaletype="fit" aligntype="center" style="overflow: hidden; opacity: 1;"><img src="./11819642803577320048" width="178" height="54" style="position: inherit; left: 0px; top: 9.5px;"></div>
+        </div>
+      </section>
+      <section class="disclaimer-panel ng-binding" custom-ext-text-fit="" minfontsize="7" multiline="false" truncate="true" title="Сайт поиска работы в Украине" style="overflow: hidden; white-space: nowrap; opacity: 1;"><span style="font-size: 9px; overflow: inherit; text-overflow: clip; white-space: inherit;">
+        Сайт поиска работы в Украине
+      </span></section>
+    </section>
+  </div>
+  <!-- End Layout -->
+
+<!-- Libraries -->
+<script src="./f(6).txt"></script>
+<script src="./f(7).txt"></script>
+<script src="./f(8).txt"></script>
+<script src="./f(9).txt"></script>
+<script src="./f(10).txt"></script>
+<script src="./f(11).txt"></script>
+<script src="./f(12).txt"></script>
+
+<!-- Custom -->
+<script src="./f(13).txt"></script>
+
+
+</body></html>

@@ -1,0 +1,377 @@
+@font-face{
+  /*src: (../fonts/HelveticaNeue/HelveticaNeue-Bold.ttf);*/
+  src: (Exported Fonts/ProximaNova/ProximaNova-Regular.woff);
+  src: (Exported Fonts/ProximaNova/ProximaNova-Light.otf);
+	font-weight: 300;
+  /*'это сгенерирован шрифт через сайт https://www.web-font-generator.com/results?dir=46e097a50f656d36187dbd4d25dfcda5*/
+	
+}
+
+@font-face{
+  /*src: (../fonts/HelveticaNeue/HelveticaNeue-Bold.ttf);*/
+  src: (Exported Fonts/Roboto/Roboto-Black.ttf);
+  src: (Exported Fonts/Roboto/Roboto-BlackItalic.ttf);
+  src: (Exported Fonts/Roboto/Roboto-Bold.ttf);
+  src: (Exported Fonts/Roboto/Roboto-BoldItalic.ttf);
+  src: (Exported Fonts/Roboto/Roboto-Italic.ttf);
+  src: (Exported Fonts/Roboto/Roboto-Light.ttf);
+  src: (Exported Fonts/Roboto/Roboto-LightItalic.ttf);
+  src: (Exported Fonts/Roboto/Roboto-Medium.ttf);
+  src: (Exported Fonts/Roboto/Roboto-MediumItalic.ttf);
+  src: (Exported Fonts/Roboto/Roboto-Regular.ttf);
+}
+
+/*@font-face {
+  font-family: 'FontAwesome';
+  src: url("/fonts/font-awesome/fontawesome-webfont.eot");
+  src: url("/fonts/font-awesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/font-awesome/fontawesome-webfont.woff2") format("woff2"), url("/fonts/font-awesome/fontawesome-webfont.woff") format("woff"), url("/fonts/font-awesome/fontawesome-webfont.ttf") format("truetype"), url("/fonts/font-awesome/fontawesome-webfont.svg#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}*/
+
+html {
+	font-size: 10px;
+	position: relative;
+}
+
+.box {
+	padding-left: 90px;
+	padding-right: 90px;
+}
+
+.header {
+	background: #ffcc33;
+	height: 65px;
+	/* line-height: 65px; */ /*центрировать элементы шапки*/
+}
+
+.header nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: inherit; /*наследовать значение высоты родителя */
+}
+img {
+	/*padding-top: 10px;*/
+}
+
+.header nav a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
+	font-family: "Proxima Nova", sans-serif;
+	font-size: 1.6rem;
+	transition: color .4s; 
+}
+
+.header nav a:hover {
+	color: white;
+}
+
+main {
+	width: 75%;
+	display: inline-block; /*сказали, что он блок*/
+	border-right: 1px solid gray;
+	/*height: 100vh;*/
+}
+
+aside {
+	width: 24%;
+	display: inline-block; /*сказали, что он блок, чтобы стали в 1 лиию*/
+}
+
+.article {
+	display: flex;/* мы говорим, что в .article есть 2 контйнера, один из хин картинка и она должна подтягиваться под текст справа*/
+	margin-bottom: 20px; 
+}
+
+.article_img {
+	width: 30%;
+	/*flex: 0 0 30%; можно использовать flex для item=.article_img 
+	(контейнер, в которой лежит картинка) 
+	(flex: 0 0 30% - степень сжатия, увеличение элемента,ширина)*/
+	border-radius: 5px;
+	overflow: hidden; /*скажем блоку, чтобы углы скруглялись, 
+	установили прозрачность*/
+	position: relative; /* и детям position: relative;*/
+}
+
+.article_img img { /*картинка ровняется по ширине родителя
+	width: 100%;
+	transform: scale(1);
+	transition: transform .4s ease-in;/*манипуляции с анимированием  - плавный наход*/
+	/*то, как мы делаем - анимация*/
+	height: 100%;
+	width: auto;
+	position: absolute; /*и родителю position: relative;*/
+	/*left: -50%;чтобы центрировать*/
+/* ширина больше высоты, то высота - auto, а ширина - 100%*/
+/* высота больше высоты, то высота - 100%, а ширина - auto*/
+	border-radius: 5px;
+
+
+
+}
+
+.article_img img:hover { /*картинка увеличивается, задали псевдокласс*/
+	transform: scale(1.2); /*то, что мы делаем - анимация*/
+}
+
+.article_content {
+	width: 70%;
+	margin-left: 26px; 
+	/*margin-left: 10px;*/
+}
+p.parameters  {
+	font-family: "ProximaNova", sans-serif;
+	color: #D3D3D3;
+	font-size: .7rem;
+	margin-top: 5px;
+	margin-bottom: 5px; 
+}
+
+span.drob {
+	display: inline-block;
+	font-family: "ProximaNova", sans-serif;
+	color: #D3D3D3;
+	font-size: 1.5rem;
+	margin: 5px 5px;
+}
+span.drob_1 {
+	display: inline-block;
+	font-family: "ProximaNova", sans-serif;
+	color: #D3D3D3;
+	font-size: 1.5rem;
+	margin: 5px 5px;
+}
+
+span.drob_1:hover{
+	cursor: pointer;
+	color: orange;
+}
+span.yellow  {
+	display: inline-block;
+	font-family: "ProximaNova", sans-serif;
+	color: orange;
+	font-size: 1.5rem;
+	margin: 5px 5px;
+}
+span.yellow:hover {
+	cursor: pointer;
+}
+
+.article_content h3 {
+	font-family: "ProximaNova", sans-serif; /*можем указывать 
+	несколько шрифтов, по мере загружения они подгружаются на сайт*/
+	font-weight: 300;
+	font-size: 2.2rem; /*30 px*/
+	text-transform: capitalize;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.article_content h3:hover {
+	cursor: pointer;
+	color: orange;
+}
+
+.article_content p {
+	font-family: Roboto, sans-serif; /*можем указывать 
+	несколько шрифтов, по мере загружения они подгружаются на сайт*/
+	font-weight: 300;
+	font-size: 1.3rem; /*16 px*/
+	line-height: 1.5;
+
+
+}
+
+.fa-angle-right {
+	color: orange;
+}
+
+
+.header_middle {
+	font-family: "ProximaNova", sans-serif;
+	font-size: 2.2rem; /*30 px*/
+}
+.color {
+	color: orange;
+	font-size: 1.3rem;
+	font-family: Roboto, sans-serif; 
+	margin: 5px 5px;
+
+}
+
+.no_color {
+	color: lightgray;
+	font-size: 1.3rem;
+	font-family: Roboto, sans-serif; 
+	margin: 5px 5px;
+
+}
+.fa-eye, .fa-comment {
+	color: lightgray;
+	font-size: 1.3rem;
+}
+
+a.bottom {
+	display: block;
+	width: 170px;
+	height: 44px;
+	background: white;
+	border: 1px solid orange;
+	border-radius: 5px;
+	margin-top: 53px;
+	margin-bottom: 85px; 
+	text-decoration: none;
+	margin: 53px 35% 85px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: Roboto, sans-serif;
+	font-size: 12px;
+	color: black;
+	padding-top: 15px;
+    box-sizing: border-box;
+}
+
+a.bottom:hover{
+	background: orange;
+	color: white;
+	cursor: pointer;
+	}
+
+
+.box_2 {
+	float: right;
+    padding-top: 65px;	
+}
+   
+input {
+	border: 1px solid lightgray;
+    border-radius: 15px;
+    width: 210px;
+    height: 30px;
+    margin-bottom: 26px;
+}
+
+i.fas {
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  margin-right: -36px;
+  position: relative;
+  z-index: 1;
+  font-size: 1.5rem;
+}
+
+i.fas + input {
+  padding-left: 30px;
+}
+
+
+ .colortext {
+    font-size: 1.3rem;
+    font-family: Roboto, sans-serif;
+   }
+.calendar {
+	width: 240px;
+}
+
+table{
+	border: 1px solid lightgray;
+    border-radius: 10px;
+    width: 236px;
+    height: 250px;
+    margin-left: -5px;
+    text-align: center;
+    font-family: ProximaNova,sans-serif;
+    font-size: 1.2rem;
+    border-collapse: collapse;
+    color: gray;
+}
+
+.date {
+	font-family: ProximaNova,sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+    vertical-align: center;
+}
+.gray{
+	background: lightgray;
+	border: 1px solid white;
+}
+
+.border{
+	border: 1px solid white;
+}
+
+.light {
+	color: lightgray;
+}
+.unik {
+	color: white;
+	background: orange;
+}
+.unik:hover {
+	color: gray;
+	background: lightgray;
+	cursor: pointer;
+}
+
+
+td {
+	border: 1px solid lightgray;
+}
+
+
+.block_1{
+	padding-bottom: 0px;
+}
+.middle {
+	font-size: 1.2rem;
+	font-family: Roboto, sans-serif;
+	color: lightgray;
+	padding: 0px;
+}
+.maxi {
+	font-size: 1.6rem;
+	font-family: Roboto, sans-serif;
+	padding: 0px;
+
+}
+
+
+.footer {
+	width: 100%;
+	height: 65px;
+	background: #f8cc33;
+	clear: both;
+}
+.copy {
+	font-family: ProximaNova-Regular, sans-serif;
+	font-size: 13px;
+	color: #a78613;
+	padding-left: 45px;
+	padding-top: 5px;
+	margin-right: 200px;
+	float: left;
+    margin-right: 60px;
+}
+
+.informations {
+	float: left;	
+	margin-top: 21px;
+}
+
+
+.informations_a {
+	display: inline-flex;
+	font-family: Roboto, sans-serif;
+	font-size: 1.4rem;
+	color: black;
+	text-decoration: none;
+	margin-left: 30px;
+}
+.informations_a:hover {
+	color: white;
+}
